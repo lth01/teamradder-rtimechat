@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅방</title>
+    <link rel="stylesheet" href="../css/streaming.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="./streaming.html"><img src="../img/logo.svg" alt="실시간_채팅_로고" width="30"></a>
+        </h1>
+    </header>
+    <main>
+        <!-- 비디오 & 댓글 섹션 -->
+        <section class="rtchat-video">
+            <div class="rtchat-videocontainer">
+                <!-- 댓글창 & 채팅창 열기 -->
+                <nav class="video-topmenu">
+                    <ul>
+                        <li>
+                            <!-- 실시간 채팅 열기 -->
+                            <button>
+                                <img src="../img/chatroom-open.svg" alt="실시간 채팅 열기 버튼" width="20" height="27">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <figure>
+                    <video src="" controls></video>
+                </figure>
+
+                <!-- 비디오 nav 시간상 controls로 넘어감-->
+                <nav style="display: none;">
+                    <!-- left side -->
+                    <div>
+                        <ul>
+                            <!-- 재생 & 일시정지 -->
+                            <li></li>
+                            <!-- 소리 크기 조절 -->
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!-- right side -->
+                    <div>
+                        <!-- 확대 & 전체보기 -->
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- 동영상 정보 (이후 메인화면에서도 정보 사용가능하므로.. article로 생성)-->
+            <article class="rtchat-video-information">
+                <h2 class="rtchat-video-name">비디오 제목</h2>
+                <div>
+                    <!-- 시청자 인원-->
+                    <h3 class="rtchat-video-liveviewer">10명</h3>
+                    <!-- 조회수 -->
+                    <h3 class="rtchat-video-viewcount">200회</h3>
+                </div>
+            </article>
+            <!-- 댓글 -->
+            <article class="rtchat-comment">
+                <form class="rtchat-comment-form" action="">
+                    <fieldset name="comment-form-menu">
+                        <h2>
+                            <!-- 아이콘 -->
+                            <div><img src="" alt=""></div>
+                            <ul>
+                                <li><button>첨부</button></li>
+                                <li><button>댓글달기</button></li>
+                            </ul> 
+                        </h2>
+                        <textarea name="" id="" cols="30" rows="10">
+
+                        </textarea>
+                    </fieldset>
+                </form>        
+                <ul class="rtcht-commentlist">
+
+                </ul>
+            </article>
+        </section>
+
+        
+        <!-- 실시간 채팅 -->
+        <aside class="rtchat-chatroom">
+            <!-- 채팅창 닫기 -->
+            <nav>
+                <button><img src="../img/chatroom-close.svg" alt="실시간 채팅 닫기 버튼" width="20"></button>
+                <h2>실시간 채팅</h2>
+            </nav>
+            <!-- 실시간 채팅 올라가는 부분 -->
+            <section>
+                <!-- 채팅 목록 -->
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <!-- 채팅 입력 폼 -->
+            <form action="">
+                <input type="text">
+                <input type="button" value="채팅">
+            </form>
+        </aside>
+
+    </main>
+    <!-- 확정된거 X -->
+    <footer></footer>
+</body>
+</html>
