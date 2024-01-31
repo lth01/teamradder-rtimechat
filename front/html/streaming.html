@@ -64,28 +64,47 @@
                 </div>
             </article>
             <!-- 댓글 -->
-            <article class="rtchat-comment">
+            <article class="rtchat-comment-article">
                 <form class="rtchat-comment-form" action="">
                     <fieldset name="comment-form-menu">
                         <h2>
                             <!-- 아이콘 -->
-                            <div><img src="" alt=""></div>
+                            <div class="user-icon"></div>
                             <ul>
-                                <li><button>첨부</button></li>
-                                <li><button>댓글달기</button></li>
+                                <li><button id="btn_attach">첨부</button></li>
+                                <li><button id="btn_reply">댓글달기</button></li>
                             </ul> 
                         </h2>
-                        <textarea name="" id="" cols="30" rows="10">
+                        <textarea name="" id="">
 
                         </textarea>
                     </fieldset>
                 </form>        
-                <ul class="rtcht-commentlist">
-
+                <ul class="rtchat-commentlist">
+                    <li class="rtchat-comment">
+                        <h3>
+                            <div class="user-icon"></div>
+                        </h3>
+                        <div>
+                            <h4>
+                                <div class="comment-user-info">
+                                    <!-- 닉네임 -->
+                                    <span class="comment-nickname">abc</span>
+                                    <!-- 댓글 일자 -->
+                                    <span class="comment-date">2023.10.24</span>
+                                </div>
+                                <!-- 첨부파일 -->
+                                <button>
+                                    첨부파일
+                                </button>
+                            </h4>
+                            <!-- 댓글 내용 -->
+                            <p></p>
+                        </div>
+                    </li>
                 </ul>
             </article>
         </section>
-
         
         <!-- 실시간 채팅 -->
         <aside class="rtchat-chatroom">
@@ -95,14 +114,29 @@
                 <h2>실시간 채팅</h2>
             </nav>
             <!-- 실시간 채팅 올라가는 부분 -->
-            <section>
+            <section class="rtchat-chatlist-container">
                 <!-- 채팅 목록 -->
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="rtchat-chatlist">
+                    <li class="rtchat-chat">
+                        <span class="rtchat-chat-username">김 아무개</span>
+                        <span class="rtchat-chat-frag"></span>
+                        <span class="rtchat-chat-text">awefaiwehfiawhefiahwefihawelifhalwiehfiauwehfiawheflihawiefhwiefhiuawhflih^</span>
+                    </li>
+                    <li class="rtchat-chat">
+                        <span class="rtchat-chat-username"></span>
+                        <span class="rtchat-chat-frag"></span>
+                        <span class="rtchat-chat-text"></span>
+                    </li>
+                    <li class="rtchat-chat">
+                        <span class="rtchat-chat-username"></span>
+                        <span class="rtchat-chat-frag"></span>
+                        <span class="rtchat-chat-text"></span>
+                    </li>
+                    <li class="rtchat-chat">
+                        <div class="rtchat-chat-username"></div>
+                        <span class="rtchat-chat-frag"></span>
+                        <span class="rtchat-chat-text"></span>
+                    </li>
                 </ul>
             </section>
             <!-- 채팅 입력 폼 -->
